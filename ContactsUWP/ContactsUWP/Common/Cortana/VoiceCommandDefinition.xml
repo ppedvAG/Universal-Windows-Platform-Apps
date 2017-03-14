@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <!--Command Set und Sprache festlegen-->
+  <CommandSet xml:lang="de-de" Name="UniversalAppCommandSet_de-de">
+    <!--einzigartiger name der als Sprachkommando dient um App zu aktivieren-->
+    <CommandPrefix>Kontakte</CommandPrefix>
+    <Example>zeige Sabine</Example>
+    <!--Add a command to the CommandSet, and name it.-->
+    <Command Name="zeige">
+      <!--Add an example to the command which will be displayed in the Cortana canvas.-->
+      <Example>zeige Sabine</Example>
+      <!--text auf den Cortana horcht-->
+      <!--optionale Worte in eckigen Klammern-->
+      <ListenFor > zeige [Kontakt] {nutzer} </ListenFor>
+      <!--Feedback text der von Cortana beim öffnen gesprochen wird-->
+      <Feedback> zeige Kontakt {nutzer} </Feedback>
+      <!--And finally add navigate (this Element specified that the command is of Foreground activation)-->
+      <!--<Navigate/>-->
+      <VoiceCommandService Target="ContactsVoiceCommandService"/>
+    </Command>
+    <!--The Phraselist are the list of string which are used along with the commands-->
+    <!--<PhraseList Label="nutzer">
+      <Item>Sabine</Item>
+      <Item>Thomas</Item>
+      <Item>Daniel</Item>
+    </PhraseList>-->
+  </CommandSet>
+</VoiceCommands>

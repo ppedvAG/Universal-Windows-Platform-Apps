@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="ContactsUWP.Views.ContactDetailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ContactsUWP.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cv="using:ContactsUWP.Common.Converter"
+    xmlns:st="using:WindowsStateTriggers"
+    mc:Ignorable="d" MinWidth="100">
+    <Page.Resources>
+        <cv:BooleanToPinSymbolConverter x:Key="BooleanToPinSymbolConverter"></cv:BooleanToPinSymbolConverter>
+        <Style TargetType="TextBlock" x:Key="TextBlockStyle">
+            <Setter Property="Foreground" Value="{ThemeResource BasicAccentForegroundBrush}"></Setter>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="TextBlockHeaderStyle" BasedOn="{StaticResource TextBlockStyle}">
+            <Setter Property="FontSize" Value="18"></Setter>
+            <Setter Property="Margin" Value="0, 16, 0, 0"></Setter>
+        </Style>
+        <Style TargetType="AppBarButton">
+            <Setter Property="Foreground" Value="{ThemeResource BasicAccentForegroundBrush}"></Setter>
+        </Style>
+    </Page.Resources>
+    <Grid Background="{ThemeResource BasicAccentBackgroundBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <st:DeviceFamilyStateTrigger DeviceFamily="Mobile"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="BtnCall.Visibility" Value="Visible"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Grid Margin="10,10,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <CommandBar x:Name="CommandBar" Grid.Column="0" Background="Transparent" Foreground="White">
+                <CommandBar.PrimaryCommands>
+                    <AppBarButton x:Uid="BtnContactDetailPin" x:Name="BtnPinToStart" Icon="{Binding IsPinned, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BooleanToPinSymbolConverter}}" Label="Pin to start" Click="BtnPinToStart_Click"/>
+                    <AppBarButton x:Uid="BtnContactDetailEdit" x:Name="BtnEdit" Icon="Edit" Label="Edit" Click="BtnEdit_Click"/>
+                    <AppBarButton x:Uid="BtnContactDetailCall" Visibility="Collapsed" x:Name="BtnCall" Icon="Phone" Label="Call" Click="BtnCall_Click"/>
+                </CommandBar.PrimaryCommands>
+                <CommandBar.SecondaryCommands>
+                    <AppBarButton x:Uid="BtnContactDetailShare" x:Name="BtnShare" Icon="ReShare" Label="Teilen" Click="BtnShare_Click"></AppBarButton>
+                    <AppBarButton x:Uid="BtnContactDetailDelete" x:Name="BtnDelete" Icon="Delete" Label="Löschen" Click="BtnDelete_Click"></AppBarButton>
+                </CommandBar.SecondaryCommands>
+            </CommandBar>
+
+            <TextBlock x:Uid="TBContactDetailTitle" Style="{StaticResource TextBlockStyle}" Grid.Row="1" x:Name="TBContactName" Text="{Binding Name, FallbackValue=Name}" FontSize="30"></TextBlock>
+            <ScrollViewer Grid.Row="2" Margin="0, 10, 0, 0">
+                <StackPanel>
+                    <TextBlock x:Uid="BtnContactDetailAddress" Text="Address" Style="{StaticResource TextBlockHeaderStyle}"></TextBlock>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" x:Name="TBContactAddress" Text="{Binding Address}"></TextBlock>
+                    <TextBlock x:Uid="BtnContactDetailPhone" Text="Phone" Style="{StaticResource TextBlockHeaderStyle}"></TextBlock>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" x:Name="TBContactPhonenumber" Text="{Binding Phone}"></TextBlock>
+                    <TextBlock x:Uid="BtnContactDetailMail" Text="Mail" Style="{StaticResource TextBlockHeaderStyle}"></TextBlock>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" x:Name="TBContactMail" Text="{Binding Mail}"></TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

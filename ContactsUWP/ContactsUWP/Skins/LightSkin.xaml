@@ -1,0 +1,14 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ContactsUWP.Skins">
+
+    <SolidColorBrush x:Key="BasicForegroundBrush" Color="Black"></SolidColorBrush>
+    <SolidColorBrush x:Key="BasicBackgroundBrush" Color="WhiteSmoke"></SolidColorBrush>
+    <SolidColorBrush x:Key="AltBackgroundBrush" Color="White"></SolidColorBrush>
+    <SolidColorBrush x:Key="BasicHamburgerMenuBackgroundBrush" Color="WhiteSmoke"></SolidColorBrush>
+    <SolidColorBrush x:Key="BasicHamburgerMenuForegroundBrush" Color="Black"></SolidColorBrush>
+    <SolidColorBrush x:Key="BasicAccentBackgroundBrush" Color="{StaticResource SystemAccentColor}"></SolidColorBrush>
+    <SolidColorBrush x:Key="BasicAccentForegroundBrush" Color="White"></SolidColorBrush>
+
+</ResourceDictionary>

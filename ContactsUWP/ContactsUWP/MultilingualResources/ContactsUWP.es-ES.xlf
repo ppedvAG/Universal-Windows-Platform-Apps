@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="es-ES" original="CONTACTSUWP/STRINGS/EN-US/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1795.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="CONTACTSUWP/STRINGS/EN-US/RESOURCES.RESW" datatype="resx">
+        <trans-unit id="AppName" translate="yes" xml:space="preserve">
+          <source>ContactsUWP</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">ContactsUWP</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">General</note>
+        </trans-unit>
+        <trans-unit id="ASBRootHostContacts.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Search</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Buscar</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">RootHost Page</note>
+        </trans-unit>
+        <trans-unit id="BtnAddContactCancel.Label" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Cancelar</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">AddContact Page</note>
+        </trans-unit>
+        <trans-unit id="BtnAddContactSave.Label" translate="yes" xml:space="preserve">
+          <source>Save</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Guardar</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">AddContact Page</note>
+        </trans-unit>
+        <trans-unit id="BtnContactDetailAddress.Text" translate="yes" xml:space="preserve">
+          <source>Address</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Dirección</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">ContactDetail Page</note>
+        </trans-unit>
+        <trans-unit id="BtnContactDetailDelete.Label" translate="yes" xml:space="preserve">
+          <source>Delete</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Eliminar</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">AddDetail Page</note>
+        </trans-unit>
+        <trans-unit id="BtnContactDetailEdit.Label" translate="yes" xml:space="preserve">
+          <source>Edit</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Edición</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">AddDetail Page</note>
+        </trans-unit>
+        <trans-unit id="BtnContactDetailMail.Text" translate="yes" xml:space="preserve">
+          <source>Mail</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Correo</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">ContactDetail Page</note>
+        </trans-unit>
+        <trans-unit id="BtnContactDetailPhone.Text" translate="yes" xml:space="preserve">
+          <source>Phone</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Teléfono</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">ContactDetail Page</note>
+        </trans-unit>
+        <trans-unit id="BtnContactDetailPin.Label" translate="yes" xml:space="preserve">
+          <source>Pin to start</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Anclar a inicio</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">AddDetail Page</note>
+        </trans-unit>
+        <trans-unit id="BtnContactDetailShare.Label" translate="yes" xml:space="preserve">
+          <source>Share</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Compartir</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">AddDetail Page</note>
+        </trans-unit>
+        <trans-unit id="PvtiSettingsAbout.Header" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Acerca de</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Settings Page</note>
+        </trans-unit>
+        <trans-unit id="PvtiSettingsGeneral.Header" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">General</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Settings Page</note>
+        </trans-unit>
+        <trans-unit id="PvtSettingsTitle.Title" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Configuración</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Settings Page</note>
+        </trans-unit>
+        <trans-unit id="TBAddContactAddress.Header" translate="yes" xml:space="preserve">
+          <source>Address</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Dirección</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">AddContact Page</note>
+        </trans-unit>
+        <trans-unit id="TBAddContactMail.Header" translate="yes" xml:space="preserve">
+          <source>Mail</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Correo</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">AddContact Page</note>
+        </trans-unit>
+        <trans-unit id="TBAddContactName.Text" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Name</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">AddContact Page</note>
+        </trans-unit>
+        <trans-unit id="TBAddContactPhonenumber.Header" translate="yes" xml:space="preserve">
+          <source>Phone</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Teléfono</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">AddContact Page</note>
+        </trans-unit>
+        <trans-unit id="TBAddContactTitle.Text" translate="yes" xml:space="preserve">
+          <source>New Contact</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Nuevo contacto</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">AddContact Page</note>
+        </trans-unit>
+        <trans-unit id="TBHamContacts.Text" translate="yes" xml:space="preserve">
+          <source>Contacts</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Contactos</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">RootHost Page</note>
+        </trans-unit>
+        <trans-unit id="TBHamSettings.Text" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Configuración</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">RootHost Page</note>
+        </trans-unit>
+        <trans-unit id="TBRootHostTitle.Text" translate="yes" xml:space="preserve">
+          <source>Contacts</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Contactos</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">RootHost Page</note>
+        </trans-unit>
+        <trans-unit id="BtnICCtrlCamera.Content" translate="yes" xml:space="preserve">
+          <source>Camera</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Cámara</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">ImageCapture Control</note>
+        </trans-unit>
+        <trans-unit id="BtnICCtrlPicker.Content" translate="yes" xml:space="preserve">
+          <source>Open picture</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">Cuadro abierto</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">ImageCapture Control</note>
+        </trans-unit>
+        <trans-unit id="BtnContactDetailCall.Label" translate="yes" xml:space="preserve">
+          <source>Call</source>
+          <target state="needs-review-translation" state-qualifier="tm-suggestion">Llamar</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">ContactDetail Page</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
